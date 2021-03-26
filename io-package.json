@@ -1,0 +1,96 @@
+{
+    "common": {
+        "name": "tlbtestadapter",
+        "version": "0.0.1",
+        "news": {
+            "0.0.1": {
+                "en": "initial release",
+                "de": "Erstveröffentlichung",
+                "ru": "Начальная версия",
+                "pt": "lançamento inicial",
+                "nl": "Eerste uitgave",
+                "fr": "Première version",
+                "it": "Versione iniziale",
+                "es": "Versión inicial",
+                "pl": "Pierwsze wydanie",
+                "zh-cn": "首次出版"
+            }
+        },
+        "title": "TLB Testadapt",
+        "titleLang": {
+            "en": "TLB Testadapt",
+            "de": "TLB Testadapt",
+            "ru": "TLB Testadapt",
+            "pt": "TLB Testadapt",
+            "nl": "TLB Testadapt",
+            "fr": "TLB Testadapt",
+            "it": "TLB Testadapt",
+            "es": "TLB Testadapt",
+            "pl": "TLB Testadapt",
+            "zh-cn": "TLB Testadapt"
+        },
+        "desc": {
+            "en": "Nur für mich zum Testen",
+            "de": "Nur für mich zum Testen",
+            "ru": "Nur für mich zum Testen",
+            "pt": "Nur für mich zum Testen",
+            "nl": "Nur für mich zum Testen",
+            "fr": "Nur für mich zum Testen",
+            "it": "Nur für mich zum Testen",
+            "es": "Nur für mich zum Testen",
+            "pl": "Nur für mich zum Testen",
+            "zh-cn": "Nurfürmich zum Testen"
+        },
+        "authors": [
+            "Lembnau <tom.lembke@gmail.com>"
+        ],
+        "keywords": [
+            "template"
+        ],
+        "license": "MIT",
+        "platform": "Javascript/Node.js",
+        "main": "main.js",
+        "icon": "tlbtestadapter.png",
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/Lembnau/ioBroker.tlbtestadapter/master/admin/tlbtestadapter.png",
+        "readme": "https://github.com/Lembnau/ioBroker.tlbtestadapter/blob/master/README.md",
+        "loglevel": "info",
+        "mode": "daemon",
+        "type": "misc-data",
+        "compact": true,
+        "materialize": true,
+        "dependencies": [
+            {
+                "js-controller": ">=1.4.2"
+            }
+        ]
+    },
+    "native": {
+        "option1": true,
+        "option2": "42"
+    },
+    "objects": [],
+    "instanceObjects": [
+        {
+            "_id": "info",
+            "type": "channel",
+            "common": {
+                "name": "Information"
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.connection",
+            "type": "state",
+            "common": {
+                "role": "indicator.connected",
+                "name": "Device or service connected",
+                "type": "boolean",
+                "read": true,
+                "write": false,
+                "def": false
+            },
+            "native": {}
+        }
+    ]
+}
