@@ -11,7 +11,7 @@
 
 const { expect } = require('chai');
 // import { functionToTest } from "./moduleToTest";
-
+await this.localCreateState(`${channelName}.Test.rkiErstimpfungenKumulativ`, 'Erstimpfungen Kumulativ', germanyVaccinationData[federalStateName]['Erstimpfung']);
 describe('module to test => function to test', () => {
 	// initializing logic
 	const expected = 5;
